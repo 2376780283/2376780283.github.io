@@ -1,5 +1,12 @@
 # source_webapps_zzh
-~ 随便找的html先用 用来just old shit🤓🤓
+### CN 没啥好说的 EN 😀😀😀😀😀😀😀😀
+
+<p>
+    <img align="center" src="https://github-readme-stats-sigma-five.vercel.app/api?username=2376780283&show_icons=true&theme=cobalt&count_private=true"/>
+</p>
+
+<p >   
+</p>
 
 # NE2
 ### 使用说明：
