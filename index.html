@@ -1,0 +1,428 @@
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> 
+  <!--==================== UNICONS 图标====================--> 
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"> 
+  <!--==================== SWIPER CSS ====================--> 
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> 
+  <!--==================== CSS ====================--> 
+  <link rel="stylesheet" href="assets/css/styles.css"> 
+  <!-- iconfont font class 方式引用图标 --> 
+  <!-- <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/c/font_3900458_82z46p85im.css"
+    /> --> 
+  <title>Responsive Portfolio Website</title> 
+ </head> 
+      
+ <body id="v1">
+ 
+  <svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
+   <symbol id="icon-fanyi" viewbox="0 0 1024 1024">
+    <path d="M608 416h288c35.36 0 64 28.48 64 64v416c0 35.36-28.48 64-64 64H480c-35.36 0-64-28.48-64-64v-288H128c-35.36 0-64-28.48-64-64V128c0-35.36 28.48-64 64-64h416c35.36 0 64 28.48 64 64v288z m0 64v64c0 35.36-28.48 64-64 64h-64v256.032c0 17.664 14.304 31.968 31.968 31.968H864a31.968 31.968 0 0 0 31.968-31.968V512a31.968 31.968 0 0 0-31.968-31.968H608zM128 159.968V512c0 17.664 14.304 31.968 31.968 31.968H512a31.968 31.968 0 0 0 31.968-31.968V160A31.968 31.968 0 0 0 512.032 128H160A31.968 31.968 0 0 0 128 159.968z m64 244.288V243.36h112.736V176h46.752c6.4 0.928 9.632 1.824 9.632 2.752a10.56 10.56 0 0 1-1.376 4.128c-2.752 7.328-4.128 16.032-4.128 26.112v34.368h119.648v156.768h-50.88v-20.64h-68.768v118.272H306.112v-118.272H238.752v24.768H192z m46.72-122.368v60.48h67.392V281.92H238.752z m185.664 60.48V281.92h-68.768v60.48h68.768z m203.84 488H576L668.128 576h64.64l89.344 254.4h-54.976l-19.264-53.664h-100.384l-19.232 53.632z m33.024-96.256h72.864l-34.368-108.608h-1.376l-37.12 108.608zM896 320h-64a128 128 0 0 0-128-128V128a192 192 0 0 1 192 192zM128 704h64a128 128 0 0 0 128 128v64a192 192 0 0 1-192-192z"></path>
+   </symbol>
+   <symbol id="icon-bilibili-line" viewbox="0 0 1024 1024">
+    <path d="M306.005333 117.632L444.330667 256h135.296l138.368-138.325333a42.666667 42.666667 0 0 1 60.373333 60.373333L700.330667 256H789.333333A149.333333 149.333333 0 0 1 938.666667 405.333333v341.333334a149.333333 149.333333 0 0 1-149.333334 149.333333h-554.666666A149.333333 149.333333 0 0 1 85.333333 746.666667v-341.333334A149.333333 149.333333 0 0 1 234.666667 256h88.96L245.632 177.962667a42.666667 42.666667 0 0 1 60.373333-60.373334zM789.333333 341.333333h-554.666666a64 64 0 0 0-63.701334 57.856L170.666667 405.333333v341.333334a64 64 0 0 0 57.856 63.701333L234.666667 810.666667h554.666666a64 64 0 0 0 63.701334-57.856L853.333333 746.666667v-341.333334A64 64 0 0 0 789.333333 341.333333zM341.333333 469.333333a42.666667 42.666667 0 0 1 42.666667 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666666-42.666667z m341.333334 0a42.666667 42.666667 0 0 1 42.666666 42.666667v85.333333a42.666667 42.666667 0 0 1-85.333333 0v-85.333333a42.666667 42.666667 0 0 1 42.666667-42.666667z"></path>
+   </symbol>
+   <symbol id="icon-gitee" viewbox="0 0 1024 1024">
+    <path d="M512 1024C229.222 1024 0 794.778 0 512S229.222 0 512 0s512 229.222 512 512-229.222 512-512 512z m259.149-568.883h-290.74a25.293 25.293 0 0 0-25.292 25.293l-0.026 63.206c0 13.952 11.315 25.293 25.267 25.293h177.024c13.978 0 25.293 11.315 25.293 25.267v12.646a75.853 75.853 0 0 1-75.853 75.853h-240.23a25.293 25.293 0 0 1-25.267-25.293V417.203a75.853 75.853 0 0 1 75.827-75.853h353.946a25.293 25.293 0 0 0 25.267-25.292l0.077-63.207a25.293 25.293 0 0 0-25.268-25.293H417.152a189.62 189.62 0 0 0-189.62 189.645V771.15c0 13.977 11.316 25.293 25.294 25.293h372.94a170.65 170.65 0 0 0 170.65-170.65V480.384a25.293 25.293 0 0 0-25.293-25.267z"></path>
+    <symbol id="icon-github" viewbox="0 0 1024 1024">
+     <path d="M512 42.666667A464.64 464.64 0 0 0 42.666667 502.186667 460.373333 460.373333 0 0 0 363.52 938.666667c23.466667 4.266667 32-9.813333 32-22.186667v-78.08c-130.56 27.733333-158.293333-61.44-158.293333-61.44a122.026667 122.026667 0 0 0-52.053334-67.413333c-42.666667-28.16 3.413333-27.733333 3.413334-27.733334a98.56 98.56 0 0 1 71.68 47.36 101.12 101.12 0 0 0 136.533333 37.973334 99.413333 99.413333 0 0 1 29.866667-61.44c-104.106667-11.52-213.333333-50.773333-213.333334-226.986667a177.066667 177.066667 0 0 1 47.36-124.16 161.28 161.28 0 0 1 4.693334-121.173333s39.68-12.373333 128 46.933333a455.68 455.68 0 0 1 234.666666 0c89.6-59.306667 128-46.933333 128-46.933333a161.28 161.28 0 0 1 4.693334 121.173333A177.066667 177.066667 0 0 1 810.666667 477.866667c0 176.64-110.08 215.466667-213.333334 226.986666a106.666667 106.666667 0 0 1 32 85.333334v125.866666c0 14.933333 8.533333 26.88 32 22.186667A460.8 460.8 0 0 0 981.333333 502.186667 464.64 464.64 0 0 0 512 42.666667"></path>
+    </symbol>
+   </symbol>
+  </svg> 
+  <!--==================== HEADER ====================--> 
+  <header class="header scroll-header" id="header"> 
+   <nav id="v2" class="nav container"> 
+    <a id="v3" href="#" class="nav__logo">ASOUTHERNCAT</a> 
+    <div class="nav__menu" id="nav-menu"> 
+     <ul id="v4" class="nav__list grid"> 
+      <li id="v5" class="nav__item"> <a id="v6" href="#home" class="nav__link"> <i id="v7" class="uil uil-estate nav__icon"></i> <p id="v8" i18n="home">Home</p> </a> </li> 
+      <li id="v9" class="nav__item"> <a id="v10" href="#about" class="nav__link"> <i id="v11" class="uil uil-user nav__icon"></i> <p id="v12" i18n="about">About</p> </a> </li> 
+      <li id="v13" class="nav__item"> <a id="v14" href="#skills" class="nav__link"> <i id="v15" class="uil uil-file-alt nav__icon"></i> <p id="v16" i18n="skills">Skills</p> </a> </li> 
+      <li id="v17" class="nav__item"> <a id="v18" href="#portfolio" class="nav__link"> <i id="v19" class="uil uil-scenery nav__icon"></i> <p id="v20" i18n="portfolio">Portfolio</p> </a> </li> 
+    <!--  <li id="v21" class="nav__item"> <a id="v22" href="#contact" class="nav__link"> <i id="v23" class="uil uil-message nav__icon"></i> <p id="v24" i18n="contact">Contactme</p> </a> </li> -->
+      <li id="v25" class="nav__item"> 
+       <div class="nav__link" id="translate" value="en"> 
+        <svg id="v26" class="icon nav__icon-svg" aria-hidden="true"> 
+         <use id="v27" xlink:href="#icon-fanyi"></use> 
+        </svg> 
+        <a class="=nav__link" id="nav__translate">Translate</a> 
+       </div> </li> 
+     </ul> 
+     <i class="uil uil-times nav__close" id="nav-close"></i> 
+    </div> 
+    <div id="v28" class="nav__btns"> 
+     <i class="uil uil-moon change-theme" id="theme-button"></i> 
+     <div class="nav__toggle" id="nav-toggle"> 
+      <i id="v29" class="uil uil-apps"></i> 
+     </div> 
+    </div> 
+   </nav> 
+  </header> 
+  
+  <!--==================== MAIN ====================--> 
+  <main id="v30" class="main"> 
+         <!-- 背景图片 
+        <div class="bg-all">
+            <img id="bg" src="assets/img/bg.png"</img>
+            <div class="cover"></div>
+        </div> -->
+   <!--==================== HOME ====================--> 
+   <section class="home section" id="home"> 
+   
+    <div id="v31" class="home__container container grid"> 
+     <div id="v32" class="home__content grid"> 
+      <div id="v33" class="home__social"> 
+       <a href="https://gitee.com/asoutherncat/" target="_blank" class="home__social-icon"> 
+        <!-- <i id="v34" class="uil uil-linkedin-alt"></i> --> 
+        <svg t="1674798484640" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2757"> 
+         <path d="M512 1024C229.222 1024 0 794.778 0 512S229.222 0 512 0s512 229.222 512 512-229.222 512-512 512z m259.149-568.883h-290.74a25.293 25.293 0 0 0-25.292 25.293l-0.026 63.206c0 13.952 11.315 25.293 25.267 25.293h177.024c13.978 0 25.293 11.315 25.293 25.267v12.646a75.853 75.853 0 0 1-75.853 75.853h-240.23a25.293 25.293 0 0 1-25.267-25.293V417.203a75.853 75.853 0 0 1 75.827-75.853h353.946a25.293 25.293 0 0 0 25.267-25.292l0.077-63.207a25.293 25.293 0 0 0-25.268-25.293H417.152a189.62 189.62 0 0 0-189.62 189.645V771.15c0 13.977 11.316 25.293 25.294 25.293h372.94a170.65 170.65 0 0 0 170.65-170.65V480.384a25.293 25.293 0 0 0-25.293-25.267z" fill="hsl(250deg 69% 61%)" p-id="2758"></path> 
+        </svg> </a> 
+       <a href="http://github.com" target="_blank" class="home__social-icon"> <i id="v35" class="uil uil-github-alt"></i> </a> 
+       <a href="https://t.bilibili.com/" target="_blank" class="home__social-icon"> 
+        <!-- <i id="v36" class="uil uil-dribbble"></i> --> 
+        <svg t="1674801734735" viewbox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4124"> 
+         <path d="M777.514667 131.669333a53.333333 53.333333 0 0 1 0 75.434667L728.746667 255.829333h49.92A160 160 0 0 1 938.666667 415.872v320a160 160 0 0 1-160 160H245.333333A160 160 0 0 1 85.333333 735.872v-320a160 160 0 0 1 160-160h49.749334L246.4 207.146667a53.333333 53.333333 0 1 1 75.392-75.434667l113.152 113.152c3.370667 3.370667 6.186667 7.04 8.448 10.965333h137.088c2.261333-3.925333 5.12-7.68 8.490667-11.008l113.109333-113.152a53.333333 53.333333 0 0 1 75.434667 0z m1.152 231.253334H245.333333a53.333333 53.333333 0 0 0-53.205333 49.365333l-0.128 4.010667v320c0 28.117333 21.76 51.157333 49.365333 53.162666l3.968 0.170667h533.333334a53.333333 53.333333 0 0 0 53.205333-49.365333l0.128-3.968v-320c0-29.44-23.893333-53.333333-53.333333-53.333334z m-426.666667 106.666666c29.44 0 53.333333 23.893333 53.333333 53.333334v53.333333a53.333333 53.333333 0 1 1-106.666666 0v-53.333333c0-29.44 23.893333-53.333333 53.333333-53.333334z m320 0c29.44 0 53.333333 23.893333 53.333333 53.333334v53.333333a53.333333 53.333333 0 1 1-106.666666 0v-53.333333c0-29.44 23.893333-53.333333 53.333333-53.333334z" fill="hsl(250deg 69% 61%)" p-id="4125"></path> 
+        </svg> </a> 
+      </div> 
+      <div id="v37" class="home__img"> 
+       <svg class="home__blob" viewbox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+        <mask id="mask0" mask-type="alpha"> 
+         <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"></path> 
+        </mask> 
+        <g id="v38" mask="url(#mask0)"> 
+         <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"></path> 
+         <image class="home__blob-img" x="0" y="-30" xlink:href="assets/img/cat.png"></image> 
+        </g> 
+       </svg> 
+      </div> 
+      <div id="v39" class="home__data"> 
+       <h1 id="v40" class="home__title" i18n="home__title"> Hi, I'm ASOUTHERNCAT </h1> 
+       <h3 id="v41" class="home__subtitle" i18n="home__subtitle"> Frontend developer </h3> 
+       <p id="v42" class="home__description" i18n="home__description"> High level experience in web design and development knowledge, producing quality work. </p> 
+       <a id="v43" href="#contact" class="button button-flex"> <span id="v44" i18n="home__contact">Contact Me</span> <i id="v45" class="uil uil-message button__icon"></i> </a> 
+      </div> 
+     </div> 
+     <div id="v46" class="home__scroll"> 
+      <a id="v47" href="#about" class="home__scroll-button button--flex"> <i id="v48" class="uil uil-mouse-alt-2 home__scroll-mouse"></i> <span class="home__scroll-name" i18n="home__scroll-name">Scroll down</span> <i id="v49" class="uil uil-arrow-down home__scroll-arrow"></i> </a> 
+     </div> 
+    </div> 
+   </section> 
+   <!--==================== ABOUT ====================--> 
+   <section class="about section" id="about"> 
+    <h2 id="v50" class="section__title" i18n="about__title">About Me</h2> 
+    <span class="section__subtitle" i18n="about__subtitle">My introduction</span> 
+    <div id="v51" class="about__container container grid"> 
+     <img id="v52" src="assets/img/about.png" alt="" class="about__img"> 
+     <div id="v53" class="about__data"> 
+      <p id="v54" class="about__description" i18n="about__description"> Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work. </p> 
+      <div id="v55" class="about__info"> 
+       <div id="v56"> 
+        <span id="v57" class="about__info-title">2+</span> 
+        <span class="about__info-name" i18n="about__info-name1">Years of <br id="v58"> experience</span> 
+       </div> 
+       <div id="v59"> 
+        <span id="v60" class="about__info-title">01+</span> 
+        <span class="about__info-name" i18n="about__info-name2">Completed <br id="v61"> projects</span> 
+       </div> 
+       <div id="v62"> 
+        <span id="v63" class="about__info-title">31+</span> 
+        <span class="about__info-name" i18n="about__info-name3">Companies <br id="v64"> worked</span> 
+       </div> 
+      </div> 
+      <div id="v65" class="about__buttons"> 
+       <a download="" href="assets/pdf/简历.pdf" class="button button--flex"> <span id="v66" i18n="download">Download CV</span><i id="v67" class="uil uil-download-alt button__icon"></i> </a> 
+      </div> 
+     </div> 
+    </div> 
+   </section> 
+   <!--==================== SKILLS ====================--> 
+   <section class="skills section" id="skills"> 
+    <h2 id="v68" class="section__title" i18n="skills__title">Skills</h2> 
+    <span class="section__subtitle" i18n="skills__subtitle">My technical level</span> 
+    <div id="v69" class="skills__container container grid"> 
+     <div id="v70"> 
+      <!--==================== SKILLS 1 ====================--> 
+      <div id="v71" class="skills__content skills__open"> 
+       <div id="v72" class="skills__header"> 
+        <i id="v73" class="uil uil-brackets-curly skills__icon"></i> 
+        <div id="v74"> 
+         <h1 id="v75" class="skills__title" i18n="home__subtitle"> Frontend developer </h1> 
+         <span class="skills__subtitle" i18n="skills__years">More than * years</span> 
+        </div> 
+        <i id="v76" class="uil uil-angle-down skills__arrow"></i> 
+       </div> 
+       <div id="v77" class="skills__list grid"> 
+        <div id="v78" class="skills__data"> 
+         <div id="v79" class="skills__titles"> 
+          <h3 id="v80" class="skills__name">HTML</h3> 
+          <span id="v81" class="skills__number">0.3%</span> 
+         </div> 
+         <div id="v82" class="skills__bar"> 
+          <div id="v83" class="skills__percentage skills__html"></div> 
+         </div> 
+        </div> 
+        <div id="v84" class="skills__data"> 
+         <div id="v85" class="skills__titles"> 
+          <h3 id="v86" class="skills__name">CSS</h3> 
+          <span id="v87" class="skills__number">0.1%</span> 
+         </div> 
+         <div id="v88" class="skills__bar"> 
+          <div id="v89" class="skills__percentage skills__css"></div> 
+         </div> 
+        </div> 
+        <div id="v90" class="skills__data"> 
+         <div id="v91" class="skills__titles"> 
+          <h3 id="v92" class="skills__name">JavaScript</h3> 
+          <span id="v93" class="skills__number">0.9%</span> 
+         </div> 
+         <div id="v94" class="skills__bar"> 
+          <div id="v95" class="skills__percentage skills__js"></div> 
+         </div> 
+        </div> 
+        <div id="v96" class="skills__data"> 
+         <div id="v97" class="skills__titles"> 
+          <h3 id="v98" class="skills__name">VUE</h3> 
+          <span id="v99" class="skills__number">10%</span> 
+         </div> 
+         <div id="v100" class="skills__bar"> 
+          <div id="v101" class="skills__percentage skills__vue"></div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <!--==================== SKILLS 2 ====================--> 
+      <div id="v102" class="skills__content skills__close"> 
+       <div id="v103" class="skills__header"> 
+        <i id="v104" class="uil uil-server-network skills__icon"></i> 
+        <div id="v105"> 
+         <h1 id="v106" class="skills__title" i18n="skills__title2"> Backend developer </h1> 
+         <span class="skills__subtitle" i18n="skills__years2">More than * years</span> 
+        </div> 
+        <i id="v107" class="uil uil-angle-down skills__arrow"></i> 
+       </div> 
+       <div id="v108" class="skills__list grid"> 
+        <div id="v109" class="skills__data"> 
+         <div id="v110" class="skills__titles"> 
+          <h3 id="v111" class="skills__name">Java</h3> 
+          <span id="v112" class="skills__number">35%</span> 
+         </div> 
+         <div id="v113" class="skills__bar"> 
+          <div id="v114" class="skills__percentage skills__java"></div> 
+         </div> 
+        </div> 
+        <div id="v115" class="skills__data"> 
+         <div id="v116" class="skills__titles"> 
+          <h3 id="v117" class="skills__name">Python</h3> 
+          <span id="v118" class="skills__number">24%</span> 
+         </div> 
+         <div id="v119" class="skills__bar"> 
+          <div id="v120" class="skills__percentage skills__python"></div> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </section> 
+   <!--==================== QUALIFICATION ====================--> 
+   <section id="v121" class="qualification section"> 
+    <h2 id="v122" class="section__title" i18n="qualification__title"> Qualification </h2> 
+    <span class="section__subtitle" i18n="qualification__subtitle">My personal journey</span> 
+    <div id="v123" class="qualification__container container"> 
+     <div id="v124" class="qualification__tabs"> 
+      <div class="qualification__button button--flex qualification__active" data-target="#education"> 
+       <i id="v125" class="uil uil-graduation-cap qualification__icon"></i> 
+       <span id="v126" i18n="education">Education</span> 
+      </div> 
+      <div id="v127" class="qualification__button button--flex" data-target="#work"> 
+       <i id="v128" class="uil uil-briefcase-alt qualification__icon"></i> 
+       <span id="v129" i18n="work">Work</span> 
+      </div> 
+     </div> 
+     <div id="v130" class="qualification__sections"> 
+      <!--==================== QUALIFICATION CONTENT 1 ====================--> 
+      <div class="qualification__content qualification__active" data-content="" id="education"> 
+       <!--==================== QUALIFICATION 1 ====================--> 
+       <div id="v131" class="qualification__data"> 
+        <div id="v132"> 
+         <h3 id="v133" class="qualification__title" i18n="qualification1__title"> Computer Enginner </h3> 
+         <span class="qualification__subtitle" i18n="qualification1__subtitle">**** - University</span> 
+         <div id="v134" class="qualification__calendar"> 
+          <i id="v135" class="uil uil-calendar-alt"></i> 2019 - 2023 
+         </div> 
+        </div> 
+        <div id="v136"> 
+         <span id="v137" class="qualification__rounder"></span> 
+         <span id="v138" class="qualification__line"></span> 
+        </div> 
+       </div> 
+       <!--==================== QUALIFICATION 2 ====================--> 
+       <div id="v139" class="qualification__data"> 
+        <div id="v140"></div> 
+        <div id="v141"> 
+         <span id="v142" class="qualification__rounder"></span> 
+         <span id="v143" class="qualification__line"></span> 
+        </div> 
+        <div id="v144"> 
+         <h3 id="v145" class="qualification__title" i18n="qualification2__title"> Web Design </h3> 
+         <span class="qualification__subtitle" i18n="qualification2__subtitle">Self-Study</span> 
+         <div id="v146" class="qualification__calendar"> 
+          <i id="v147" class="uil uil-calendar-alt"></i> 2023.12 
+         </div> 
+        </div> 
+       </div> 
+       <!--==================== QUALIFICATION 3 ====================--> 
+       <div id="v148" class="qualification__data"> 
+        <div id="v149"> 
+         <h3 id="v150" class="qualification__title" i18n="qualification3__title"> Web Development </h3> 
+         <span class="qualification__subtitle" i18n="qualification3__subtitle">Self-Study</span> 
+         <div id="v151" class="qualification__calendar"> 
+          <i id="v152" class="uil uil-calendar-alt"></i> 2024 - ..... 
+         </div> 
+        </div> 
+        <div id="v153"> 
+         <span id="v154" class="qualification__rounder"></span> 
+         <!-- <span id="v155" class="qualification__line"></span> --> 
+        </div> 
+       </div> 
+      </div> 
+      <!--==================== QUALIFICATION CONTENT 2 ====================--> 
+      <div class="qualification__content" data-content="" id="work"> 
+       <!--==================== QUALIFICATION 1 ====================--> 
+       <div id="v156" class="qualification__data"> 
+        <div id="v157"></div> 
+        <div id="v158"> 
+         <span id="v159" class="qualification__rounder"></span> 
+         <!-- <span id="v160" class="qualification__line"></span> --> 
+        </div> 
+        <div id="v161"> 
+         <h3 id="v162" class="qualification__title" i18n="qualification4__title"> Software Enginner </h3> 
+         <span class="qualification__subtitle" i18n="qualification4__subtitle">ShenZhen</span> 
+         <div id="v163" class="qualification__calendar"> 
+          <i id="v164" class="uil uil-calendar-alt"></i> 2024-08-30
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </section> 
+   <!--==================== PORTFOLIO ====================--> 
+   <section class="portfolio section" id="portfolio"> 
+    <h2 id="v165" class="section__title" i18n="portfolio__title">Portfolio</h2> 
+    <span class="section__subtitle" i18n="portfolio__subtitle">Most recent works</span> 
+    <div id="v166" class="portfolio__container container swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-android swiper-container-css-mode"> 
+     <div id="v167" class="swiper-wrapper" aria-live="polite">
+      <div id="v176" class="portfolio__content grid swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" role="group" aria-label="1 / 5" style="width: 352px;"> 
+       <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img"> 
+       <div id="v177" class="portfolio_"> 
+        <h3 id="v178" class="portfolio__title" i18n="portfolio3__title"> Modern Website </h3> 
+        <p class="portfolio__description" i18n="portfolio3__description"> Website adaptable to all devices, with ui components and animated interactions. </p> 
+        <a href="https://gitee.com/asoutherncat/" target="_blank" class="button button--flex button--small portfolio__button"> Demo <i id="v179" class="uil uil-arrow-right button__icon"></i> </a> 
+       </div> 
+      </div> 
+      <!--==================== PORTFOLIO 1 ====================--> 
+      <div id="v168" class="portfolio__content grid swiper-slide swiper-slide-active" data-swiper-slide-index="0" role="group" aria-label="2 / 5" style="width: 352px;"> 
+       <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img"> 
+       <div id="v169" class="portfolio_"> 
+        <h3 id="v170" class="portfolio__title" i18n="portfolio1__title"> Modern Website </h3> 
+        <p class="portfolio__description" i18n="portfolio1__description"> Website adaptable to all devices, with ui components and animated interactions. </p> 
+        <a href="https://gitee.com/asoutherncat/" target="_blank" class="button button--flex button--small portfolio__button"> Demo <i id="v171" class="uil uil-arrow-right button__icon"></i> </a> 
+       </div> 
+      </div> 
+      <!--==================== PORTFOLIO 2 ====================--> 
+      <div id="v172" class="portfolio__content grid swiper-slide swiper-slide-next" data-swiper-slide-index="1" role="group" aria-label="3 / 5" style="width: 352px;"> 
+       <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img"> 
+       <div id="v173" class="portfolio_"> 
+        <h3 id="v174" class="portfolio__title" i18n="portfolio2__title"> Modern Website </h3> 
+        <p class="portfolio__description" i18n="portfolio2__description"> Website adaptable to all devices, with ui components and animated interactions. </p> 
+        <a href="https://gitee.com/asoutherncat/" target="_blank" class="button button--flex button--small portfolio__button"> Demo <i id="v175" class="uil uil-arrow-right button__icon"></i> </a> 
+       </div> 
+      </div> 
+      <!--==================== PORTFOLIO 3 ====================--> 
+      <div id="v176" class="portfolio__content grid swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" role="group" aria-label="4 / 5" style="width: 352px;"> 
+       <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img"> 
+       <div id="v177" class="portfolio_"> 
+        <h3 id="v178" class="portfolio__title" i18n="portfolio3__title"> Modern Website </h3> 
+        <p class="portfolio__description" i18n="portfolio3__description"> Website adaptable to all devices, with ui components and animated interactions. </p> 
+        <a href="https://gitee.com/asoutherncat/" target="_blank" class="button button--flex button--small portfolio__button"> Demo <i id="v179" class="uil uil-arrow-right button__icon"></i> </a> 
+       </div> 
+      </div> 
+      <div id="v168" class="portfolio__content grid swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" role="group" aria-label="5 / 5" style="width: 352px;"> 
+       <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img"> 
+       <div id="v169" class="portfolio_"> 
+        <h3 id="v170" class="portfolio__title" i18n="portfolio1__title"> Modern Website </h3> 
+        <p class="portfolio__description" i18n="portfolio1__description"> Website adaptable to all devices, with ui components and animated interactions. </p> 
+        <a href="https://gitee.com/asoutherncat/" target="_blank" class="button button--flex button--small portfolio__button"> Demo <i id="v171" class="uil uil-arrow-right button__icon"></i> </a> 
+       </div> 
+      </div>
+     </div> 
+     <!-- add arrows--> 
+     <div id="v180" class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="v167"> 
+      <i id="v181" class="uil uil-angle-right-b swiper-portfolio-icon"></i> 
+     </div> 
+     <div id="v182" class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="v167"> 
+      <i id="v183" class="uil uil-angle-left-b swiper-portfolio-icon"></i> 
+     </div> 
+     <!-- Add Pagination --> 
+     <div id="v184" class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+      <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+      <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+      <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+     </div> 
+     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div> 
+   </section> 
+   <!--==================== FOOTER ====================--> 
+   <footer id="v185" class="footer"> 
+    <div id="v186" class="footer__bg"> 
+     <div id="v187" class="footer__container container grid"> 
+      <div id="v188"> 
+       <h1 id="v189" class="footer__title">ASouthernCat</h1> 
+       <span class="footer__subtitle" i18n="home__subtitle">Frontend developer</span> 
+      </div> 
+      <div id="v190" class="footer__socials"> 
+       <a id="v191" href="https://gitee.com/asoutherncat/" target="_blank"> 
+        <svg id="v192" class="icon footer__social" aria-hidden="true"> 
+         <use id="v193" xlink:href="#icon-gitee"></use> 
+        </svg> </a> 
+       <a id="v194" href="http://github.com" target="_blank"> 
+        <svg id="v195" class="icon footer__social" aria-hidden="true"> 
+         <use id="v196" xlink:href="#icon-github"></use> 
+        </svg> </a> 
+       <a id="v197" href="https://t.bilibili.com/" target="_blank"> 
+        <svg id="v198" class="icon footer__social" aria-hidden="true"> 
+         <use id="v199" xlink:href="#icon-bilibili-line"></use> 
+        </svg> </a> 
+      </div> 
+     </div> 
+     <p id="v200" class="footer__copy"> © ASOUTHERNCAT.Copy from <a class="footer__copy" href="https://www.youtube.com/c/Bedimcode" target="_blank">Bedimcode</a> </p> 
+    </div> 
+   </footer> 
+   <!--==================== SCROLL TOP ====================--> 
+   <a href="#" class="scrollup" id="scroll-up"> <i id="v201" class="uil uil-arrow-up scrollup__icon"></i> </a> 
+   <!--==================== SWIPER JS ====================--> 
+   <script src="assets/js/swiper-bundle.min.js"></script> 
+   <!-- iconfont JS --> 
+   <script src="assets/js/iconfont.js"></script> 
+   <!-- jquery --> 
+   <script src="assets/js/jquery2.1.4.min.js"></script> 
+   <script src="assets/js/jquery.i18n.min.js"></script> 
+   <!--==================== MAIN JS ====================--> 
+   <script src="assets/js/main.js"></script> 
+   <!-- translate JS --> 
+   <script src="assets/js/cn-en-translate.js"></script>  
+  </main>
+ </body>
+</html>
